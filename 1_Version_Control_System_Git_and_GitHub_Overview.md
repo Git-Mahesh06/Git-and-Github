@@ -5,105 +5,105 @@
 Git is a Distributed Version Control System (DVCS) used to track and manage changes in source code.
 It allows multiple developers to collaborate efficiently and maintain version history.
 
-🔹 Types of Version Control Systems
-1️⃣ Centralized Version Control System (CVCS)
+## 🔹1. Types of Version Control Systems
 
-A single central server stores the codebase.
+- Centralized Version Control System (CVCS)
+- A single central server stores the codebase.
+- Developers directly commit code to this central server.
+- Example: SVN, Perforce
 
-Developers directly commit code to this central server.
+## 🔹2. Distributed Version Control System (DVCS)
 
-Example: SVN, Perforce
+- Every developer has a local copy of the repository.
+- Work can be done offline, commits are local.
+- Example: Git, Mercurial
 
-2️⃣ Distributed Version Control System (DVCS)
+## Advantages of DVCS
 
-Every developer has a local copy of the repository.
+- Works offline
+- Faster commits
+- Each clone is a backup
+- Easy branching and merging
 
-Work can be done offline, commits are local.
+## 🔹3. Git Architecture
 
-Example: Git, Mercurial
+- Git operates through four main areas of a project:
+  ```
+        [ Working Directory ]
+        │
+        ▼
+        git add
+        │
+        ▼
+        [ Staging Area ]
+        │
+        ▼
+        git commit
+        │
+        ▼
+        [ Local Repository ]
+        │
+        ▼
+        git push
+        │
+        ▼
+        [ Remote Repository (GitHub) ]
+  ```
 
-✅ Advantages of DVCS
+## 🔹4. Working Directory
 
-Works offline
-
-Faster commits
-
-Each clone is a backup
-
-Easy branching and merging
-
-## 🧱 Git Architecture
-
-Git operates through four main areas of a project:
-
-[ Working Directory ]
-│
-▼
-git add
-│
-▼
-[ Staging Area ]
-│
-▼
-git commit
-│
-▼
-[ Local Repository ]
-│
-▼
-git push
-│
-▼
-[ Remote Repository (GitHub) ]
-
-🔹 Working Directory
-
-Your project folder containing actual files.
-
-Files are not tracked until staged.
-
-🧰 Commands
-git bash
+- Your project folder containing actual files.
+- Files are not tracked until staged.
+- Commands: git bash
+  ```
+  git status
+  ```
 
 ```
-git status
+  git diff
 ```
 
-git diff
+## 🔹5. Staging Area (Index)
 
-🔹 Staging Area (Index)
+- Holds files ready to be committed.
 
-Holds files ready to be committed.
+- You decide which files to include in the next commit.
 
-You decide which files to include in the next commit.
+- Commands
 
-🧰 Commands
+```
 git add filename.txt
 
 git add .
 
 git status
+```
 
-🔹 Local Repository
+## 🔹6. Local Repository
 
-Stores committed snapshots of your project.
+- Stores committed snapshots of your project.
 
-Allows viewing or reverting to previous commits.
+- Allows viewing or reverting to previous commits.
 
-🧰 Commands
+- Commands
+
+```
 git commit -m "Commit message"
 
 git log
 
 git show
+```
 
-🔹 Remote Repository (GitHub)
+## 🔹7. Remote Repository (GitHub)
 
-Online storage of your repository for collaboration.
+- Online storage of your repository for collaboration.
 
-Hosted on GitHub or similar platforms.
+- Hosted on GitHub or similar platforms.
 
-🧰 Commands
+- Commands
+
+```
 git remote add origin https://github.com/username/repo-name.git
 
 git push origin main
@@ -112,30 +112,45 @@ git pull origin main
 
 git clone https://github.com/username/repo-name.git
 
-⚙️ Git Configuration
+```
 
-Before first use, configure your Git identity.
+## 🔹8. Git Configuration
 
-🧰 Commands
+- Before first use, configure your Git identity.
+
+- Commands
+
+```
 git config --global user.name "Your Name"
 
 git config --global user.email "your@email.com"
 
 git config --list
+```
 
-🏗️ Initializing a Git Repository
-🧰 Commands
-mkdir project-folder
-cd project-folder
-git init
+## 🔹9. Initializing a Git Repository
 
-☁️ Linking Local Repository to GitHub
-🧰 Commands
-git remote add origin https://github.com/username/repository-name.git
-git remote -v
+- Commands
 
-📤 Uploading Files to GitHub
-🧰 Commands
+  ```
+  mkdir project-folder
+  cd project-folder
+  git init
+  ```
+
+- Linking Local Repository to GitHub
+- Commands
+
+  ```
+  git remote add origin https://github.com/username/repository-name.git
+  git remote -v
+  ```
+
+- Uploading Files to GitHub
+- Commands
+
+```
 git add .
 git commit -m "Initial commit"
 git push origin main
+```
