@@ -149,8 +149,8 @@ git config --list
 - Uploading Files to GitHub
 - Commands
 
-```
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
+  ```
+  git add .
+  git commit -m "Initial commit"
+  git push origin main
+  ```
