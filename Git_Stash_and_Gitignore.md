@@ -99,23 +99,19 @@ touch .gitignore
 
 - Example .gitignore content:
 
-# Ignore Python cache
-
-**pycache**/
-
-# Ignore log files
+## Ignore log files
 
 - \*.log
 
-# Ignore environment files
+## Ignore environment files
 
 - .env
 
-# Ignore node modules
+## Ignore node modules
 
 - node_modules/
 
-# Ignore system files
+## Ignore system files
 
 - .DS_Store
 - Thumbs.db
@@ -128,7 +124,7 @@ git status
 
 - You’ll notice the ignored files no longer appear in the untracked list.
 
-- ⚠️ Note: .gitignore only affects files that are not yet tracked by Git.
+- Note: .gitignore only affects files that are not yet tracked by Git.
 - If a file is already tracked, you must untrack it using:
 
 ```
