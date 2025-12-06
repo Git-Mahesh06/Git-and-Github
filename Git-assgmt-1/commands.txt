@@ -1,0 +1,8 @@
+1. mkdir git-demo
+2. cd mkdir
+3. touch code.txt log.txt output.txt
+4. git init
+5. git add code.txt output.txt
+6. git commit -m "Committed two files"
+7. git remote add origin https://github.com/Git-Mahesh06/Github-assignment.git
+8. git push origin master ---> (git push <remote_name> <branch_name>)

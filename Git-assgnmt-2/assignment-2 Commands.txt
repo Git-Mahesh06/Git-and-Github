@@ -1,0 +1,20 @@
+1. mkdir assg2
+2. cd assg2
+3. git init
+4. touch feature1.txt feature2.txt
+5. git add feature1.txt feature.txt
+6. git commit -m "commited two files in master"
+7. git branch develop
+8. git branch feature1
+9. git branch feature2
+10. git switch deveop
+11. touch develop.txt
+12. git stash
+13. git checkout feature1
+14. touch new.txt
+15. git add new.txt
+16. git commit -m "commite new file in feature"
+17. git checkout develop
+18. git stash pop
+19. git add develop.txt
+20. git commit -m "commited evelop file in develop branch"
